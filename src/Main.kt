@@ -15,6 +15,7 @@ fun main(args: Array<String>) {
             fixedDrawer("drawer") {
 
             }
+            content = initialContent
         }
     }
 }
