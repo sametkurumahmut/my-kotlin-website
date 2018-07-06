@@ -1,8 +1,6 @@
 import kotlinmdl.components.MdlLayoutTitle
-import kotlinmdl.components.dslish.fixedDrawer
-import kotlinmdl.components.dslish.fixedHeader
-import kotlinmdl.components.dslish.mdlLayout
-import kotlinmdl.components.dslish.row
+import kotlinmdl.components.dslish.*
+import kotlinmdl.components.style.MdlMaterialIcons
 import kotlinmdl.material.style.MaterialShade
 import kotlinmdl.style.MdlColor
 import kotlinx.html.b
@@ -25,6 +23,18 @@ fun main(args: Array<String>) {
                     img("Avatar", Img.AVATAR, "avatar")
                     b { +"Samet Kurumahmut" }
                     +"Mobile Developer"
+                }
+
+                nav("navigation") {
+                    link {
+                        +MdlMaterialIcons.accountCircle()
+                        +About.title
+                        element.onclick = {
+                            content = initialContent
+                            headerTitle.title = content!!.title
+                            null
+                        }
+                    }
                 }
             }
             content = initialContent

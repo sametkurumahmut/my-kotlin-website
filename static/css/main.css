@@ -17,3 +17,19 @@ html, body {
     justify-content: flex-end;
     padding: 16px;
 }
+.layout .navigation .mdl-navigation__link {
+    align-items: center;
+    color: rgba(0, 0, 0, 0.81);
+    display: flex !important;
+    flex-direction: row;
+    font-weight: 500;
+}
+.navigation {
+    flex-grow: 1;
+}
+.navigation .mdl-navigation__link .material-icons {
+    color: rgba(0, 0, 0, 0.81);
+    font-size: 24px;
+    margin-right: 32px;
+    width: 24px
+}
