@@ -8,8 +8,10 @@ import kotlinx.html.dom.create
 import kotlinx.html.img
 import kotlinx.html.js.header
 import site.app
+import site.kotlinmdl.components.dslish.fontAwesomeIcon
 import site.pages.About
 import site.res.static.Img
+import site.style.FontAwesomeIcons
 import kotlin.browser.document
 
 fun main(args: Array<String>) {
@@ -34,6 +36,10 @@ fun main(args: Array<String>) {
                             headerTitle.title = content!!.title
                             null
                         }
+                    }
+                    externalLink("https://github.com/sametkurumahmut") {
+                        fontAwesomeIcon(FontAwesomeIcons.GITHUB)
+                        +"GitHub"
                     }
                 }
             }

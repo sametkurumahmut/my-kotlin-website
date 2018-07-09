@@ -27,6 +27,7 @@ html, body {
 .navigation {
     flex-grow: 1;
 }
+.navigation .mdl-navigation__link .fa,
 .navigation .mdl-navigation__link .material-icons {
     color: rgba(0, 0, 0, 0.81);
     font-size: 24px;
