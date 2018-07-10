@@ -41,6 +41,10 @@ fun main(args: Array<String>) {
                         fontAwesomeIcon(FontAwesomeIcons.GITHUB)
                         +"GitHub"
                     }
+                    externalLink("https://www.linkedin.com/in/sametkurumahmut") {
+                        fontAwesomeIcon(FontAwesomeIcons.LINKEDIN)
+                        +"LinkedIn"
+                    }
                 }
             }
             content = initialContent
