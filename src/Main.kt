@@ -7,6 +7,7 @@ import kotlinx.html.b
 import kotlinx.html.dom.create
 import kotlinx.html.img
 import kotlinx.html.js.header
+import kotlinx.html.js.img
 import site.app
 import site.kotlinmdl.components.dslish.fontAwesomeIcon
 import site.pages.About
@@ -44,6 +45,10 @@ fun main(args: Array<String>) {
                     externalLink("https://www.linkedin.com/in/sametkurumahmut") {
                         fontAwesomeIcon(FontAwesomeIcons.LINKEDIN)
                         +"LinkedIn"
+                    }
+                    externalLink("https://assetstore.unity.com/publishers/16267") {
+                        +document.create.img("Unity Logo", Img.UNITY_LOGO, "nav-icon")
+                        +"Unity Asset Store"
                     }
                 }
             }

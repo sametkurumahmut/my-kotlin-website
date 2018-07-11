@@ -7,4 +7,5 @@ object Img {
 
     const val AVATAR = "${PATH_}avatar.png"
     const val ME = "${PATH_}me.jpg"
+    const val UNITY_LOGO = "${PATH_}unityLogo.png"
 }
