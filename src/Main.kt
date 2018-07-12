@@ -50,6 +50,10 @@ fun main(args: Array<String>) {
                         +document.create.img("Unity Logo", Img.UNITY_LOGO, "nav-icon")
                         +"Unity Asset Store"
                     }
+                    externalLink("mailto:samet.kurumahmut@gmail.com") {
+                        +MdlMaterialIcons.email()
+                        +"E-mail"
+                    }
                 }
             }
             content = initialContent
