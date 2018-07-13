@@ -37,5 +37,24 @@ object About : MdlLayoutContent("About", body = {
                 iconButtonExternalLink(MdlMaterialIcons.language(), "https://sametkurumahmut.github.io/hardcodedgenerator/")
             }
         }
+        cardCell(MdlCellColSize.S4, shadow = MdlShadow.DP2, classes = "card-square") {
+            title(isExpandable = true) {
+                this.element.styleAttribute = "background: url('${Img.CUSTOM_ASSET_GENERATOR_SHOWCASE}') center / cover; background-position: 75% 100%; background-repeat: no-repeat;"
+            }
+            supportingText("Unity3D gives you an option to store serializable data container classes into custom asset files. But you have to always write extra code for any of your classes that inherit ScriptableObject to generate custom asset of that class.") {
+                +document.create.br()
+                +document.create.br()
+                +"Custom Asset Generator detects automatically the classes and generate menu item paths under \"Assets/Create/Custom Assets/\". And, this tool is published on Unity Asset Store."
+            }
+            actions(true) {
+                iconButtonExternalLink(href = "https://github.com/sametkurumahmut/CustomAssetGenerator") {
+                    fontAwesomeIcon(FontAwesomeIcons.GITHUB)
+                }
+                iconButtonExternalLink(href = "http://u3d.as/jsk") {
+                    +document.create.img("Unity Logo", Img.UNITY_LOGO, "mini-icon-btn")
+                }
+                iconButtonExternalLink(MdlMaterialIcons.language(), "https://sametkurumahmut.github.io/CustomAssetGenerator/")
+            }
+        }
     }
 })
