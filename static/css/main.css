@@ -6,6 +6,9 @@ html, body {
     height: 48px;
     width: 48px;
 }
+.card-square .mdl-card__title {
+    min-height: 250px;
+}
 .drawer {
     border: none;
 }
@@ -24,14 +27,23 @@ html, body {
     flex-direction: row;
     font-weight: 500;
 }
+.mdl-card__actions .mdl-button {
+    display: inline-block;
+    float: right;
+}
 .navigation {
     flex-grow: 1;
 }
 .navigation .mdl-navigation__link .fa,
 .navigation .mdl-navigation__link .material-icons,
-.navigation .mdl-navigation__link .nav-icon {
+.navigation .mdl-navigation__link .nav-icon,
+.mini-icon-btn {
     color: rgba(0, 0, 0, 0.81);
     font-size: 24px;
-    margin-right: 32px;
     width: 24px
+}
+.navigation .mdl-navigation__link .fa,
+.navigation .mdl-navigation__link .material-icons,
+.navigation .mdl-navigation__link .nav-icon {
+    margin-right: 32px;
 }
