@@ -7,6 +7,7 @@ import kotlinmdl.internal.extensions.styleAttribute
 import kotlinmdl.style.MdlCellColSize
 import kotlinmdl.style.MdlShadow
 import kotlinx.html.dom.create
+import kotlinx.html.iframe
 import kotlinx.html.js.br
 import kotlinx.html.js.img
 import site.kotlinmdl.components.dslish.fontAwesomeIcon
@@ -39,7 +40,13 @@ object About : MdlLayoutContent("About", body = {
         }
         cardCell(MdlCellColSize.S4, shadow = MdlShadow.DP2, classes = "card-square") {
             title(isExpandable = true) {
-                this.element.styleAttribute = "background: url('${Img.CUSTOM_ASSET_GENERATOR_SHOWCASE}') center / cover; background-position: 75% 100%; background-repeat: no-repeat;"
+                val iframe = document.create.iframe {
+                    src = "https://www.youtube.com/embed/y9SQ1N6-Z_M?enablejsapi=1&amp;theme=light"
+                }
+                iframe.setAttribute("allowfullscreen", "true")
+                iframe.setAttribute("frameborder", "1")
+                iframe.styleAttribute = "height: 273px;"
+                +iframe
             }
             supportingText("Unity3D gives you an option to store serializable data container classes into custom asset files. But you have to always write extra code for any of your classes that inherit ScriptableObject to generate custom asset of that class.") {
                 +document.create.br()
