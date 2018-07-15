@@ -7,6 +7,7 @@ import kotlinmdl.internal.extensions.styleAttribute
 import kotlinmdl.style.MdlCellColSize
 import kotlinmdl.style.MdlShadow
 import kotlinx.html.dom.create
+import kotlinx.html.id
 import kotlinx.html.iframe
 import kotlinx.html.js.br
 import kotlinx.html.js.img
@@ -41,6 +42,7 @@ object About : MdlLayoutContent("About", body = {
         cardCell(MdlCellColSize.S4, shadow = MdlShadow.DP2, classes = "card-square") {
             title(isExpandable = true) {
                 val iframe = document.create.iframe {
+                    id = "youtube-player"
                     src = "https://www.youtube.com/embed/y9SQ1N6-Z_M?enablejsapi=1&amp;theme=light"
                 }
                 iframe.setAttribute("allowfullscreen", "true")
