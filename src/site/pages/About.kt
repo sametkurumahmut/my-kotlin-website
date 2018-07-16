@@ -40,14 +40,13 @@ object About : MdlLayoutContent("About", body = {
             }
         }
         cardCell(MdlCellColSize.S4, shadow = MdlShadow.DP2, classes = "card-square") {
-            title(isExpandable = true) {
-                val iframe = document.create.iframe {
+            title(isExpandable = true, classes = "embed-responsive") {
+                val iframe = document.create.iframe(classes = "embed-responsive-item") {
                     id = "youtube-player"
                     src = "https://www.youtube.com/embed/y9SQ1N6-Z_M?enablejsapi=1&amp;theme=light"
                 }
                 iframe.setAttribute("allowfullscreen", "true")
                 iframe.setAttribute("frameborder", "1")
-                iframe.styleAttribute = "height: 273px;"
                 +iframe
             }
             supportingText("Unity3D gives you an option to store serializable data container classes into custom asset files. But you have to always write extra code for any of your classes that inherit ScriptableObject to generate custom asset of that class.") {

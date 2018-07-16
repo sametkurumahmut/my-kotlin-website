@@ -20,6 +20,20 @@ html, body {
     justify-content: flex-end;
     padding: 16px;
 }
+.embed-responsive {
+	height: 0;
+	padding: 0;
+    position: relative;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 .layout .navigation .mdl-navigation__link {
     align-items: center;
     color: rgba(0, 0, 0, 0.81);
