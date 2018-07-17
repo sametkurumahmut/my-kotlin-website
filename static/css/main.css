@@ -34,6 +34,9 @@ html, body {
     top: 0;
     width: 100%;
 }
+embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
 .layout .navigation .mdl-navigation__link {
     align-items: center;
     color: rgba(0, 0, 0, 0.81);

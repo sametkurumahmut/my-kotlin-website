@@ -40,7 +40,7 @@ object About : MdlLayoutContent("About", body = {
             }
         }
         cardCell(MdlCellColSize.S4, shadow = MdlShadow.DP2, classes = "card-square") {
-            title(isExpandable = true, classes = "embed-responsive") {
+            title(isExpandable = true, classes = "embed-responsive embed-responsive-16by9") {
                 val iframe = document.create.iframe(classes = "embed-responsive-item") {
                     id = "youtube-player"
                     src = "https://www.youtube.com/embed/y9SQ1N6-Z_M?enablejsapi=1&amp;theme=light"
