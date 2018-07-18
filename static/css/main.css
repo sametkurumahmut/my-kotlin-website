@@ -34,6 +34,10 @@ html, body {
     top: 0;
     width: 100%;
 }
+.embed-responsive-item.embed-responsive-item--bordered {
+    width: calc(100% - 6px);
+    border-width: 3px;
+}
 embed-responsive-16by9 {
     padding-bottom: 56.25%;
 }
